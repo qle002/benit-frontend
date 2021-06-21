@@ -1,0 +1,34 @@
+body {
+    padding: 10px;
+}
+
+h2 {
+    padding: 15px;
+}
+
+ul {
+    padding-top: 15px;
+}
+
+p {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#accordion-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #tabs-desktop {
+        display: none;
+    }
+    
+    #accordion-mobile {
+        display: inherit;
+    }
+    
+    p {
+        padding: 10px;
+    }
+}

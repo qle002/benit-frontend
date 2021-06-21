@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercise 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./ex2.css">
+        <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <script src="/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+    </head>
+
+    <body>
+        <section class="body-container container-fluid">
+
+            <section class="container text-center">
+                <h2>Tabs on Desktop and Accordion on Mobile</h2>
+            </section>
+
+            <section id="tabs-desktop">
+                <nav>
+                    <section class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-sec1-tab" data-bs-toggle="tab" data-bs-target="#nav-sec1" type="button" role="tab" aria-controls="nav-sec1" aria-selected="true">Section 1</button>
+                        <button class="nav-link" id="nav-sec2-tab" data-bs-toggle="tab" data-bs-target="#nav-sec2" type="button" role="tab" aria-controls="nav-sec2" aria-selected="false">Section 2</button>
+                        <button class="nav-link" id="nav-sec3-tab" data-bs-toggle="tab" data-bs-target="#nav-sec3" type="button" role="tab" aria-controls="nav-sec3" aria-selected="false">Section 3</button>
+                        <button class="nav-link" id="nav-sec4-tab" data-bs-toggle="tab" data-bs-target="#nav-sec4" type="button" role="tab" aria-controls="nav-sec4" aria-selected="false">Section 4</button>
+                    </section>
+                </nav>
+
+                <section class="tab-content" id="nav-tabContent">
+                    <section class="tab-pane fade show active" id="nav-sec1" role="tabpanel" aria-labelledby="nav-sec1-tab">
+                        <p>
+                            Maecenas nec semper ante, pellentesque posuere lorem. Nullam ipsum massa, consequat eget urna ut, pulvinar dignissim lorem. Nulla facilisi. Nam mattis eleifend metus. Fusce at commodo lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus pellentesque elit sem, vel blandit posuere.
+                        </p>
+                    </section>
+
+                    <section class="tab-pane fade" id="nav-sec2" role="tabpanel" aria-labelledby="nav-sec2-tab">
+                        <p>
+                            Mauris a orci sodales, scelerisque velit vitae, gravida nisl. Ut non laoreet eros, vel laoreet nisi. Praesent sed dolor dui. Proin non fringilla quam. Aliquam erat volutpat. Vestibulum vel arcu semper, lobortis turpis ac, ultricies nisi. Praesent id.
+                        </p>
+                    </section>
+
+                    <section class="tab-pane fade" id="nav-sec3" role="tabpanel" aria-labelledby="nav-sec3-tab">
+                        <p>
+                            Sed elementum sapien ut sapien imperdiet, eu venenatis enim rhoncus. Praesent euismod tincidunt rhoncus. Duis cras amet:
+                        </p>
+
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </section>
+
+                    <section class="tab-pane fade" id="nav-sec4" role="tabpanel" aria-labelledby="nav-sec4-tab">
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                        </p>
+                        
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+                    </section>
+                </section>
+            </section>
+
+            <section class="accordion" id="accordion-mobile">
+                <section class="accordion-item">
+                    <section class="accordion-header" id="nav-sec1-tab">
+                        <button class="accordion-button active" type="button" data-bs-toggle="collapse" data-bs-target="#nav-sec1" aria-expanded="true" aria-controls="nav-sec1">
+                            Section 1
+                        </button>
+
+                        <section class="accordion-collapse collapse fade show" id="nav-sec1" role="tabpanel" aria-labelledby="nav-sec1-tab" data-bs-parent="#accordion-mobile">
+                            <p>
+                                Maecenas nec semper ante, pellentesque posuere lorem. Nullam ipsum massa, consequat eget urna ut, pulvinar dignissim lorem. Nulla facilisi. Nam mattis eleifend metus. Fusce at commodo lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus pellentesque elit sem, vel blandit posuere.
+                            </p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="accordion-item">
+                    <section class="accordion-header" id="nav-sec2-tab">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-sec2" aria-expanded="true" aria-controls="nav-sec2">
+                            Section 2
+                        </button>
+
+                        <section class="accordion-collapse collapse fade" id="nav-sec2" role="tabpanel" aria-labelledby="nav-sec2-tab" data-bs-parent="#accordion-mobile">
+                            <p>
+                                Mauris a orci sodales, scelerisque velit vitae, gravida nisl. Ut non laoreet eros, vel laoreet nisi. Praesent sed dolor dui. Proin non fringilla quam. Aliquam erat volutpat. Vestibulum vel arcu semper, lobortis turpis ac, ultricies nisi. Praesent id.
+                            </p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="accordion-item">
+                    <section class="accordion-header" id="nav-sec3-tab">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-sec3" aria-expanded="true" aria-controls="nav-sec3">
+                            Section 3
+                        </button>
+
+                        <section class="accordion-collapse collapse fade" id="nav-sec3" role="tabpanel" aria-labelledby="nav-sec3-tab" data-bs-parent="#accordion-mobile">
+                            <p>
+                                Sed elementum sapien ut sapien imperdiet, eu venenatis enim rhoncus. Praesent euismod tincidunt rhoncus. Duis cras amet:
+                            </p>
+        
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="accordion-item">
+                    <section class="accordion-header" id="nav-sec4-tab">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-sec4" aria-expanded="true" aria-controls="nav-sec4">
+                            Section 4
+                        </button>
+
+                        <section class="accordion-collapse collapse fade" id="nav-sec4" role="tabpanel" aria-labelledby="nav-sec4-tab" data-bs-parent="#accordion-mobile">
+                            <p>
+                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                            </p>
+                            
+                            <p>
+                                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
